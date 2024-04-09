@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- CSS sheet -->
+    <link rel="stylesheet" href="./css/style_index.css">
+    <!-- Google fonts -->
+    <!-- Crimspon Pro font for everything, except nav bar; Lato font for nav bar only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Amusement Park - Home Page</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- holds header logo -->
+        <div class="logo-holder">
+            <div class="logo">
+                <!---onclick logo to home page-->
+                <a href="index.html"><img src="./images/logo.svg" alt="logo in the shape of amusement park tent"
+                        height="45" width="88"></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <!-- indicates you are on Index(Home) Page by using grey box  -->
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="whattodo.html">What to do</a>
+                </li>
+                <li>
+                    <a href="tickets.html">Buy Tickets</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <!-- credit: https://www.youtube.com/watch?v=pGHOaY4dhAA&list=WL&index=1 -->
+    <section class="slider-container">
+        <!-- holds text over the slide show -->
+        <div id="title-over-slider">
+            <h1>Amusement Park</h1>
+            <h2>Open daily</h2>
+        </div>
+        <!-- slider -->
+        <div id="slider">
+            <figure>
+
+                <img src="./images/hero-background2-800x400.png"
+                    alt="theme park in light blue with tents and ferris wheel">
+                <img src="./images/hero-background4-800x400.png"
+                    alt="theme park in light blue with carrousel and magic castel">
+                <img src="./images/hero-background5-800x400.png"
+                    alt="theme park in purple-blue with tent, hot air balloon, roller coaster and ferris wheel, snow scene">
+                <img src="./images/hero-backgroundRect-800x400.png"
+                    alt="theme park in blue with tent, hot air balloons, roller coaster and ferris wheel, summer scene">
+                <img src="./images/hero-background2-800x400.png"
+                    alt="theme park in light blue with tents and ferris wheel">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <div class="features">
+        <div class="discounts-class">
+            <!-- discounts section contains svg image -->
+            <div class="discounts-title">
+                <img src="./images/discounts.svg" alt="discounts image in the shape of ticket booth" height="50%"
+                    width="54%">
+            </div>
+            <!-- discounts section contains text below image -->
+            <div class="discounts-text">
+                <p>
+                    Invite your friends and you receive a free entry.
+                </p>
+            </div>
+        </div>
+        <div class="reviews-class">
+            <!-- reviews section contains svg image -->
+            <div class="reviews-title">
+                <img src="./images/reviews2.svg" alt="reviews image in the shape of bouncy house" height="50%"
+                    width="70%">
+            </div>
+            <!-- reviews section contains text below image -->
+            <div class="reviews-text">
+                <p>
+                    "The best experience I've ever had with my family."
+                </p>
+            </div>
+        </div>
+        <div class="covid-class">
+            <!-- COVID-19 section contains svg image -->
+            <div class="covid-title">
+                <img src="./images/covid19.svg" alt="covid-19 image in the shape of concessions stand" height="50%"
+                    width="62%">
+            </div>
+            <!-- COVID-19 section contains text below image -->
+            <div class="covid-text">
+                <p>
+                    All areas are cleaned and sanitized every two hours.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map, Hours and Address -->
+    <div class="map-hours-address-section">
+        <!-- holds hours and address information -->
+        <div class="hours-address-sections">
+            <!-- holds hours section -->
+            <div class="hours-sections">
+
+                <!-- holds text title and image for hours section -->
+                <div class="hours-class">
+                    <div class="hours-title">
+                        <div class="hours-font">
+                            <p>
+                                <object data="./images/clock.svg" height="30" width="30"></object>
+                                Open Hours
+                            </p>
+                            <object data="./images/border-bottom.png" height="30" width="150"></object>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- holds sub-text for hours section -->
+                        <div class="hours-text">
+                            <p>
+                                Mon-Fri: 9:00am - 8:00pm <br> Sat-Sun: 10:00am - 10:00pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="address-section">
+                <!-- holds text title and image for hours section -->
+                <div class="address-class">
+                    <div class="address-title">
+                        <div class="address-font">
+                            <p>
+                                <object data="./images/map-icon.svg" height="30" width="30"></object>
+                                Address
+                            </p>
+                            <object data="./images/border-bottom.png" height="30" width="150"></object>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- holds sub-text for address section -->
+                        <div class="address-text">
+                            <p>
+                                00000 XYZ Street <br> Chicago, IL 00000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- holds image of map for the map section -->
+        <div class="map-class">
+            <img src="./images/map.png" alt="image of a map" height="570" width="800">
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a href="https://twitter.com/i/flow/login"><img src="images/twitter.svg"
+                        alt="white circle with blue bird graphic inside, which is a logo for twitter; if clicked, it directs to twitter's login page"
+                        height="40" width="40"></a>
+                <!--add href to twitter login page-->
+                <a href="https://www.instagram.com/accounts/login/"><img src="images/instagram.svg"
+                        alt="white circle with blue camera graphic inside, which is a logo for instagram; if clicked, it directs to instagram's login page"
+                        height="40" width="40"></a>
+                <!--add href to instagram login page-->
+                <a href="https://en-gb.facebook.com/"><img src="images/facebook.svg"
+                        alt="white circle with blue small f letter graphic inside, which is a logo for facebook; if clicked, it directs to facebook's login page"
+                        height="40" width="40"></a>
+                <!--add href to facebook login page-->
+            </p>
+
+            <div class="qa">
+                <a href="#"><span>Q & A</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Work with us</a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Contact us</a>
+            </div>
+
+        </div>
+
+        <div class="footer-center">
+
+            <div class="qa footer-header">
+                <a href="#"><span>SITE MAP</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="index.html"><span>Home Page</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="whattodo.html">What to do</a>
+            </div>
+
+            <div class="qa">
+                <a href="tickets.html">Buy Tickets</a>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <div class="qa footer-header">
+                <a href="#"><span>LEGAL</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Legal Notices</a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Terms of Use</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<!-- credit for logos -->
+<!-- Facebook: https://www.facebook.com/brand/resources/facebookapp/logo -->
+<!-- Instagram: https://www.facebook.com/brand/resources/instagram/instagram-brand/ -->
+<!-- Twitter: https://about.twitter.com/en/who-we-are/brand-toolkit -->
+
+<!-- credit for design elements -->
+<!-- designer of all svg files: Michaela Vreja -->
+<!-- designer of color selection and font: Michaela Vreja -->
+
+<!-- NOTES -->
+<!-- Remove unused images. -->
+
+</html>

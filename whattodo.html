@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS     -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- CSS sheet     -->
+    <link rel="stylesheet" href="./css/style_whattodo.css">
+    <!-- Google fonts -->
+    <!-- Crimspon Pro font for everything, except nav bar; Lato font for nav bar only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=CrimsonPro' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Amusement Park - What to Do</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-holder">
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.svg" alt="logo in the shape of amusement park tent"
+                        height="45" width="88"></a>
+                <!---onclick logo to home page-->
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <!-- indicates you are on What to Do page by using grey box  -->
+                <li class="active">
+                    <a href="whattodo.html">What to do</a>
+                </li>
+                <li>
+                    <a href="tickets.html">Buy Tickets</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--rides-->
+    <div class="rides">
+        <div class="rides-background">
+            <div class="rides-rides-background" id="rides-blur">
+                <h1>Rides</h1>
+
+                <div class="rides-container">
+                    <!--the frame which contains rides photos-->
+
+                    <!--Ride 1-->
+                    <div class="rides-column">
+                        <!--make rides photos side by side-->
+
+                        <img src="/images/ride1.jpg" alt="image of a ride rolling down with screaming kids" width="300"
+                            height="300" style="border-radius: 300px;">
+                        <div class="mask-layer">
+                            <!--photos will be masked and the name of ride will be shown when mouse hover-->
+                            <div class="update-pic">
+                                <span>Red Force</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Ride 2-->
+                    <div class="rides-column">
+
+                        <img src="images/ride2.jpg" alt="image of a ride with people moving to the right in the air"
+                            width="300" height="300" style="border-radius: 300px;">
+                        <div class="mask-layer">
+                            <div class="update-pic">
+                                <span>Orion</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Ride 3-->
+                    <div class="rides-column">
+                        <img src="images/ride3.jpg" alt="image of a roller coaster ride" width="300" height="300"
+                            style="border-radius: 300px;">
+                        <div class="mask-layer">
+                            <div class="update-pic">
+                                <span>Fury 325</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--attractions/features-->
+
+    <div class="features-section">
+
+        <div class="attractions">
+            <!--food-->
+            <div class="food-class">
+                <div class="food-title"> FOOD
+                    <object data="./images/food.svg" name="food image in the shape of ice cream house" height="300"
+                        width="300"></object>
+                </div>
+                <div class="food-text">
+                    <p>We have several delicious food courts all over our amusement park.</p>
+                </div>
+            </div>
+
+            <!--shop-->
+            <div class="shop-class">
+                <div class="shop-title">SHOPS
+                    <object data="./images/shop.svg" name="shop image in the shape of a small house" height="300"
+                        width="300"></object>
+                </div>
+                <div class="shop-text">
+                    <p>From clothes to toys:we have it all! Come and explore our world!</p>
+                </div>
+            </div>
+            <!--hotel-->
+
+            <div class="hotel-class">
+                <div class="hotel-title">HOTELS
+                    <object data="./images/hotel.svg" name="food image in the shape of a tall building" height="300"
+                        width="300"></object>
+                </div>
+                <div class="hotel-text">
+                    <p>Hotels where you can stay while you are visiting our park. Book a room now! </p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!--gallery-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/images/gallery_1.jpg" alt="image of a carousel" style="width:100%">
+            <div class="text">Special Offers</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/images/gallery_2.jpg" alt="birds view of a resort" style="width:100%">
+            <div class="text">Best Resort</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/images/gallery_3.jpg" alt="image of a spiral roller coaster" style="width:100%">
+            <div class="text">Thrilling Rides</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a href="https://twitter.com/i/flow/login"><img src="images/twitter.svg"
+                        alt="white circle with blue bird graphic inside, which is a logo for twitter; if clicked, it directs to twitter's login page"
+                        height="40" width="40"></a>
+                <!--add href to twitter login page-->
+                <a href="https://www.instagram.com/accounts/login/"><img src="images/instagram.svg"
+                        alt="white circle with blue camera graphic inside, which is a logo for instagram; if clicked, it directs to instagram's login page"
+                        height="40" width="40"></a>
+                <!--add href to instagram login page-->
+                <a href="https://en-gb.facebook.com/"><img src="images/facebook.svg"
+                        alt="white circle with blue small f letter graphic inside, which is a logo for facebook; if clicked, it directs to facebook's login page"
+                        height="40" width="40"></a>
+                <!--add href to facebook login page-->
+            </p>
+
+            <div class="qa">
+                <a href="#"><span>Q & A</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Work with us</a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Contact us</a>
+            </div>
+
+        </div>
+
+        <div class="footer-center">
+
+            <div class="qa footer-header">
+                <a href="#"><span>SITE MAP</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="index.html"><span>Home Page</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="whattodo.html">What to do</a>
+            </div>
+
+            <div class="qa">
+                <a href="tickets.html">Buy Tickets</a>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <div class="qa footer-header">
+                <a href="#"><span>LEGAL</span></a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Legal Notices</a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="qa">
+                <a href="#">Terms of Use</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<!-- credit for design elements -->
+<!-- designer of all svg files: Michaela Vreja -->
+
+</html>

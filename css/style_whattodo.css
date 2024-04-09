@@ -1,0 +1,482 @@
+/* NAVIGATION BAR CSS */
+
+/* header styling */
+header {
+    display: flex;
+    height: 60px;
+    background-color: #ffffff; /* white color */
+    padding: 30px;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+    
+/* holds logo of the navbar; styling of the logo container */
+.logo-holder {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 6%;
+}
+
+/* indicator for the active page */
+.active { 
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: rgb(240, 240, 240) !important; /* light grey color */
+    font-weight: bolder;
+}
+    
+/* navigation bar text styling */
+nav {
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    left: 48%;
+}
+
+ /* ordered list styling    */
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* list styling  */
+li {
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* nav bar text styling  */
+nav a {
+    display: inline-block;
+    color: rgb(54, 52, 59); /* dark grey with purple tint color */
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* hover over grey color */
+nav a:hover {
+    text-decoration: none;
+    color: #36343b;
+}
+
+  /* on hover over underline */  
+nav a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #000;
+        transition: width .3s;
+}
+   /* without hover over */    
+nav a:hover::after {
+        width: 100%;
+}
+    
+
+/*rides*/
+.rides-background{
+    height:700px;
+    width: 1500px;
+    min-width:1500px;
+    min-height:700px;
+    max-height:700px;
+    margin:auto;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background-image: url("/images/roller-coaster_edited.jpg");
+    position:static;
+}
+
+
+
+.rides-background h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Crimson Pro';
+    position: relative;
+}
+
+/*make rides photos side by side*/
+
+* {
+    box-sizing: border-box;
+  }
+
+.rides-background #rides-blur{
+    height: 654px;
+    padding: 1%;
+    margin:1%;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.rides-container{
+    display: flex;
+    height:90%;
+    justify-content: center;
+    margin-left:15%;
+    margin-right:15%;
+    padding-left: 1%;
+    padding-top:1%;
+    padding-bottom:6%;
+    position:relative;
+}
+
+
+.rides-column {
+    margin:50px;
+    width: 300px;
+    height:300px;
+    justify-content: center;
+    position:relative;
+}
+
+.rides-column:hover .mask-layer {
+    display: flex;
+}
+
+.rides-column .mask-layer{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width:300px;
+    height:300px;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+.rides-column .mask-layer span, .rides-column .mask-layer i{
+    font-size: 50px;
+    color:white;
+    font-family: 'Crimson Pro';
+}
+
+
+
+/*attractions*/
+.attractions{
+    display: flex;
+    height:700px;
+    width: 1500px;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Crimson Pro';
+}
+
+.food-class{
+    width: 410px;
+    height: 600px;
+    margin: 40px;
+    border-style: solid;
+    border-color:  #DCDBDB;
+    border-width: thin;
+    border-radius: 20px;
+    border-top: none;
+}
+
+.food-title{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #DCDBDB;
+    width: 410px;
+    height: 400px;
+    padding-top: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.food-text{
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    width: 410px;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.shop-class{
+    width: 410px;
+    height: 600px;
+    margin: 40px;
+    border-style: solid;
+    border-color:  #DCDBDB;
+    border-width: thin;
+    border-radius: 20px;
+    border-top: none;
+}
+
+.shop-title{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #DCDBDB;
+    width: 410px;
+    height: 400px;
+    padding-top: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.shop-text{
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    width: 410px;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+}
+
+.hotel-class{
+    width: 410px;
+    height: 600px;
+    margin: 40px;
+    border-style: solid;
+    border-color:  #DCDBDB;
+    border-width: thin;
+    border-radius: 20px;
+    border-top: none;
+}
+
+.hotel-title{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #DCDBDB;
+    width: 410px;
+    height: 400px;
+    padding-top: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.hotel-text{
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    width: 410px;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*slider show*/
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    min-width: 1000px;
+    max-width: 1000px;
+    justify-content: center;
+    text-align: center;
+    position: static;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #000000;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: static;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Crimson Pro';
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #1f1e1e; /* dark grey color */
+    font-size: 20px;
+    padding: 8px 12px;
+    position: static;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 100px) {
+    .text {font-size: 30px}
+}
+
+.imgmax{
+    max-width: 100px;
+    max-height: 90px;
+}
+
+/* FOOTER */
+
+footer
+{
+    bottom: 0;
+}
+
+.footer-distributed
+{
+    background-color: #70b4e2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 1500px;
+    min-width: 1500px;
+    text-align: left;
+    justify-content: center;
+    font: bold 16px sans-serif;
+    padding: 30px 50px;
+    margin-top:100px;
+    width: 100%;
+}
+
+.footer-left 
+{ 
+    margin-left: 50px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: lighter;
+}
+
+
+.footer-left div, .footer-center div, .footer-right div
+{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.footer-left div a, .footer-center div a, .footer-right div a
+{
+    color: #ffffffd3;
+}
+
+.footer-header {
+    margin-top: 35px !important;
+    margin-bottom: 30px;
+    pointer-events: none; /*avoid cursor disappearing when mouse hover*/
+}
+
+.footer-header a {
+    color: #ffffff !important;
+    text-decoration: none;
+    cursor: none;
+    font-weight: bold;
+}
+
+.qa {
+    width: 100px;
+    text-align: center;
+}
+    
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right
+{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Crimson Pro', serif;
+    font-weight: lighter;
+}
+    
+.footer-distributed .footer-left
+{
+    width: 40%;
+}    
+    
+.footer-distributed .footer-links
+{
+    color:  #ffffff;
+    margin: 20px 0px 22px;
+    padding: 0;
+}
+    
+.footer-distributed .footer-links a
+{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+    margin-right: 30px;
+}
+    
+.footer-distributed .footer-center
+{
+    width: 35%;
+}
+    
+.footer-distributed .footer-center p
+{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+    
+.footer-distributed .footer-center p a
+{
+    color:  #5383d3;
+    text-decoration: none;;
+}
+    
+.footer-distributed .footer-right
+{
+    width: 20%;
+}
+    
+.footer-distributed .footer-company-about span
+{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

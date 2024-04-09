@@ -1,0 +1,583 @@
+
+
+body {
+  font-family: 'Crimson Pro', serif;
+ 
+  
+}
+
+/* NAVIGATION BAR CSS */
+
+/* header styling */
+header {
+  display: flex;
+  height: 60px;
+  background-color: #ffffff; /* white color */
+  padding: 30px;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+  
+/* holds logo of the navbar; styling of the logo container */
+.logo-holder {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 6%;
+}
+
+/* indicator for the active page */
+.active { 
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: rgb(240, 240, 240) !important; /* light grey color */
+  font-weight: bolder;
+}
+  
+/* navigation bar text styling */
+nav {
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  left: 48%;
+}
+
+/* ordered list styling    */
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* list styling  */
+li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* nav bar text styling  */
+nav a {
+  display: inline-block;
+  color: rgb(54, 52, 59); /* dark grey with purple tint color */
+  padding: 15px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* hover over grey color */
+nav a:hover {
+  text-decoration: none;
+  color: #36343b;
+}
+
+/* on hover over underline */  
+nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: #000;
+      transition: width .3s;
+}
+ /* without hover over */    
+nav a:hover::after {
+      width: 100%;
+} 
+
+
+.tickets-info-container{
+  width:1500px;
+  height:1000px;
+  min-width: 1500px;
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 50px;
+  position:static;
+}
+
+/*----Family pass----*/
+
+.family-pass-container{
+  width:800px;
+  height:250px;
+  text-align: center;
+  justify-content: center;
+  top:10px;
+  left:120px;
+  margin: 15px;
+  padding:2px;
+  position:relative;
+  box-shadow: 0 0 20px rgb(172, 172, 172);
+}
+
+.family-pass-title{
+  width:785px;
+  height:40%;
+  margin:15px;
+  position:absolute;
+  padding:1px;
+  justify-content: center;
+  border-bottom-style:solid;
+  border-bottom-color:rgb(172, 172, 172,.5);
+  border-bottom-width: 5px;
+
+}
+
+.family-pass-title img{  
+  display:inline;
+  width:50px;
+  height:50px;
+  justify-content: center;
+  vertical-align: text-bottom;
+  position:relative;
+  
+}
+
+.family-pass-title h1{
+  display:inline;
+  font-size: 50px;
+  font-weight: bold;
+  position:relative;
+   
+}
+
+.family-pass-subtitle{
+  width:785px;
+  height:55%;
+  top:120px;
+  margin:2px;
+  position:relative;
+  padding:10px;
+  justify-content: center;
+}
+
+.family-pass-subtitle h2{
+  display: inline;
+  font-size: 30px;
+  
+}
+
+.family-pass-subtitle p{
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+}
+
+/*-----Pass Type 1-----*/
+
+.passtype1-container {
+  width:380px;
+  height:600px;
+  text-align: center;
+  justify-content: center;
+  top:30px;
+  left:137px; /*align with the position of family pass*/
+  margin: 1px;
+  padding:0;
+  position:relative;
+  box-shadow: 0 0 20px rgb(172, 172, 172);
+}
+
+.passtype2-container {
+  width:380px;
+  height:600px;
+  text-align: center;
+  justify-content: center;
+  top:-570px;
+  left: 555px;
+  margin: 1px;
+  padding:2px;
+  position:relative;
+  box-shadow: 0 0 20px rgb(172, 172, 172);
+}
+
+
+.passtype1-title {
+  width:380px;
+  height:30%;
+  position:relative;
+  padding:10px;
+  justify-content: center;
+  border-bottom-style:solid;
+  border-bottom-color:rgb(172, 172, 172,.5);
+  border-bottom-width: 5px;
+}
+
+.passtype1-title img {
+  top:25%;
+  display:inline;
+  width:50px;
+  height:50px;
+  vertical-align: text-bottom;
+  position:relative;
+}
+
+.passtype1-title h1{
+  top:25%;
+  display:inline;
+  font-size: 40px;
+  font-weight: bold;
+  position:relative;
+   
+}
+
+.passtype1-subtitle{
+  width:380px;
+  height:60%;
+  top:0;
+  position:relative;
+  padding:10px;
+  justify-content: center;
+}
+
+.passtype1-subtitle p{
+  width:370px;
+  padding:2%;
+  margin-top: 10px;
+  text-align:left;
+  font-size: 20px;
+}
+
+/*-----Pass Type 2-----*/
+
+.passtype2-title{
+  width:380px;
+  height:30%;
+  position:relative;
+  padding:10px;
+  justify-content: center;
+  border-bottom-style:solid;
+  border-bottom-color:rgb(172, 172, 172,.5);
+  border-bottom-width: 5px;
+}
+
+.passtype2-title img{
+  top:25%;
+  display:inline;
+  width:50px;
+  height:50px;
+  vertical-align: text-bottom;
+  position:relative;
+}
+
+.passtype2-title h1{
+  top:25%;
+  display:inline;
+  font-size: 40px;
+  font-weight: bold;
+  position:relative;
+}
+
+.passtype2-subtitle{
+  
+  width:380px;
+  height:60%;
+  top:0;
+  position:relative;
+  padding:10px;
+  justify-content: center;
+}
+
+.passtype2-subtitle p{
+  width:370px;
+  padding:2%;
+  margin-top: 10px;
+  text-align:center;
+  font-size: 20px;
+}
+
+/*-----Info-----*/
+
+.info-container{
+  width:450px;
+  height:885px;
+  text-align: center;
+  justify-content: center;
+  top: -1470px;
+  left:1000px;
+  margin: 15px;
+  padding:2px;
+  position:relative;
+  box-shadow: 0 0 20px rgb(172, 172, 172);
+}
+
+.info-title{
+  width:450px;
+  height:15%;
+  position:relative;
+  padding:10px;
+  justify-content: center;
+}
+
+.info-title img{
+  top:25%;
+  display:inline;
+  width:50px;
+  height:50px;
+  vertical-align: text-bottom;
+  position:relative;
+  
+}
+
+.info-title h1{
+  top:25%;
+  display:inline;
+  font-size: 50px;
+  font-weight: bold;
+  position:relative;
+}
+
+.info-subtitle{
+  width:440px;
+  height:85%;
+  top:0;
+  position:relative;
+  padding:10px;
+  justify-content: center;
+}
+
+.info-subtitle p{
+  padding:2%;
+  margin-top: 10px;
+  text-align:left;
+}
+
+
+
+/*-----Map-----*/
+.map-class {
+  min-width: 1200px;
+  width:1200px;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+}
+
+.map-class img {
+  margin: 0;
+  height:auto;
+}
+
+/* FOOTER */
+
+footer
+{
+    bottom: 0;
+}
+
+.footer-distributed
+{
+    background-color: #70b4e2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 1500px;
+    min-width: 1500px;
+    text-align: left;
+    justify-content: center;
+    font: bold 16px sans-serif;
+    padding: 30px 50px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer-left 
+{ 
+    margin-left: 50px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: lighter;
+}
+
+
+.footer-left div, .footer-center div, .footer-right div
+{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.footer-left div a, .footer-center div a, .footer-right div a
+{
+    color: #ffffffd3;
+}
+
+.footer-header {
+    margin-top: 35px !important;
+    margin-bottom: 30px;
+    pointer-events: none; /*avoid cursor disappearing when mouse hover*/
+}
+
+.footer-header a {
+    color: #ffffff !important;
+    text-decoration: none;
+    cursor: none;
+    font-weight: bold;
+}
+
+.qa {
+    width: 100px;
+    text-align: center;
+}
+    
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right
+{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Crimson Pro', serif;
+    font-weight: lighter;
+}
+    
+.footer-distributed .footer-left
+{
+    width: 40%;
+}    
+    
+.footer-distributed .footer-links
+{
+    color:  #ffffff;
+    margin: 20px 0px 22px;
+    padding: 0;
+}
+    
+.footer-distributed .footer-links a
+{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+    margin-right: 30px;
+}
+    
+.footer-distributed .footer-center
+{
+    width: 35%;
+}
+    
+.footer-distributed .footer-center p
+{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+    
+.footer-distributed .footer-center p a
+{
+    color:  #5383d3;
+    text-decoration: none;;
+}
+    
+.footer-distributed .footer-right
+{
+    width: 20%;
+}
+    
+.footer-distributed .footer-company-about span
+{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+/* RESPONSIVE FOR LARGE SCREENS 
+@media only screen and (min-width: 1500px) {
+  .map-class {
+    width: 80%;
+    left: 2%;
+  }
+  .logo-holder {
+    left: 12%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .map-class {
+    width: 80%;
+    left: 8%;
+  }
+  .logo-holder {
+    left: 18%;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1500px){
+  html {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1500px) {
+  html {
+    overflow-x: hidden;
+  }
+  nav {
+    left: 30%;
+  }
+
+  .map-class {
+    width: 98%;
+  }
+
+  .map-class img {
+    width: 60%;
+  }
+
+  .info-container {
+    width: 20%;
+    top: -86%;
+    height: 48%;
+  }
+
+  .tickets-info-container {
+    width: 100%;
+  }
+
+  .info-title h1 {
+    font-size: 30px;
+  }
+
+  .passtype1-title h1, .passtype2-title h1, .family-pass-title h1 {
+    font-size: 30px;
+  }
+
+  .family-pass-subtitle h2 {
+    font-size: 20px;
+  }
+
+  .family-pass-container {
+    left: 18%;
+  }
+
+  .passtype1-title img, .passtype2-title img, .info-title img, .family-pass-title img {
+    width: 30px;
+    height: 30px;
+  }
+.passtype1-container, .passtype2-container {
+    height: 48%;
+  } 
+.passtype2-container {
+  top: -38%;
+  }
+  .footer-distributed .footer-left,  .footer-distributed .footer-center,  .footer-distributed .footer-right {
+    width: 28%;
+  }
+
+  .footer-left {
+    margin-left: 0;
+  }
+
+  .footer-links {
+    width: 300px;
+  }
+
+  .footer-distributed .footer-links {
+    margin: 10px;
+  }
+}

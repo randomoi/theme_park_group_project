@@ -1,0 +1,506 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* font family for entire website */
+body{
+font-family: 'Crimson Pro', serif;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+/* NAVIGATION BAR CSS */
+
+/* header styling */
+header {
+    display: flex;
+    height: 60px;
+    background-color: #ffffff; /* white color */
+    padding: 30px;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+    
+/* holds logo of the navbar; styling of the logo container */
+.logo-holder {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 6%;
+}
+
+/* indicator for the active page */
+.active { 
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: rgb(240, 240, 240) !important; /* light grey color */
+    font-weight: bolder;
+}
+    
+/* navigation bar text styling */
+nav {
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    left: 48%;
+}
+
+ /* ordered list styling    */
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* list styling  */
+li {
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* nav bar text styling  */
+nav a {
+    display: inline-block;
+    color: rgb(54, 52, 59); /* dark grey with purple tint color */
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* hover over grey color */
+nav a:hover {
+    text-decoration: none;
+    color: #36343b;
+}
+
+  /* on hover over underline */  
+nav a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #000;
+        transition: width .3s;
+}
+   /* without hover over */    
+nav a:hover::after {
+        width: 100%;
+}
+    
+
+/* SLIDER CSS  */
+
+/* reference: https://www.youtube.com/watch?v=pGHOaY4dhAA&list=WL&index=1 */
+#slider {
+overflow: hidden;
+width: 100%; /* to keep slider size */
+justify-content: center;
+margin: auto;
+z-index: -1;
+}
+
+/* slider animation, size and position */
+#slider figure {
+position: relative;
+width: 500%;
+margin: 0;
+left: 0;
+animation: 20s slider infinite;
+}
+
+#slider figure img {
+width: 20%;
+float: left;
+}
+
+
+/* scales for the images based on transition percentage */
+@keyframes slider {
+0% {
+    left: 0;
+}
+
+20% {
+    left: 0;
+}
+
+25% {
+    left: -100%;
+}
+
+45% {
+    left: -100%;
+}
+
+50% {
+    left: -200%;
+}
+
+70% {
+    left: -200%;
+}
+
+75% {
+    left: -300%;
+}
+
+95% {
+    left: -300%;
+}
+
+100% {
+    left: -400%;
+}
+}
+
+/* text over slider container size and position */
+.slider-container{
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: -22px;
+}
+
+#title-over-slider {
+    position: relative;
+    top: 100px;
+}
+
+/* title over slider styling and position */
+#title-over-slider h1{
+    font-size: 72px;
+    top: 100px;
+    left:100px;
+    position:relative;
+    height: 2px;
+    z-index: 1;
+}
+
+/* sub-title over slider styling and position */
+#title-over-slider h2{
+    font-size: 45px;
+    top: 200px;
+    left:100px;
+    position:relative;
+    height: 2px;
+    z-index: 1;
+}
+
+/* FEATURES CSS */
+
+/* includes discounts, reviews and covid information */
+.features{
+display: flex;
+width: 100%;
+height: 50%;
+justify-content: center;
+text-align: center;
+margin: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+/* size of three features containers */
+.discounts-class, .reviews-class, .covid-class {
+    width: 24%;
+    height: 30%;
+    margin: 3%;
+}
+
+/* size of three containers holding images */
+.discounts-title, .reviews-title, .covid-title {
+    width: 100%;
+    height: 100%;
+}
+
+/* size of three containers holding text */
+.discounts-text, .reviews-text, .covid-text {
+    width: 100%;
+    height: 100%;
+}
+
+/* styling of three image containers */
+.discounts-title, .reviews-title, .covid-title {
+background-color: #DCDBDB; /* light grey color */
+padding-top: 30px;
+text-align: center;
+border-radius: 20px;
+}
+
+/* styling of three text containers */
+.discounts-text, .reviews-text, .covid-text {
+font-size: 30px;
+font-weight: lighter;
+text-align: center;
+padding: 20px;
+border: solid thin #DCDBDB; /* light grey color */
+border-radius: 0 0 20px 20px;
+margin-top: -20px;/* negative margin to create overlapping effect */
+}
+
+/* MAP, HOURS AND ADDRESS CSS */
+
+/* position and size of Hours and Address images */
+.hours-address-sections img {
+    position: relative;
+    left: -3%;
+    margin-top: -15%;
+}
+
+/* position and size of Map, Hours and Address */
+.map-hours-address-section{
+display: flex;
+height:660px;
+width: 100%;
+justify-content: center;
+margin:auto;
+position:static;
+margin-bottom: 200px;
+}
+
+/* width of containers holding address and hours information */
+.address-class, .hours-class {
+    width: 64%;
+}
+
+/* position and size of Hours and Address */
+.hours-address-sections{
+width: 40%;
+float: left;
+position: relative;
+left: -240px;
+}
+
+/* styling of Hours container  */
+.hours-class, .address-class{
+margin: 40px;
+border: 5px solid rgb(233, 232, 232, 0.1); /* light grey color with transparency */
+box-shadow: 0px 0px 5px 5px #f1f0f0; /* light grey color */
+}
+
+/* font of Hours and Address */
+.hours-font, .address-font{
+font-size: 40px;
+}
+
+/* styling of sections holding title and image */
+.hours-title, .address-title{
+min-width: 500px;
+min-height: 100px;
+padding-top: 20px;
+padding-left: 10px;
+}
+
+/* styling of sections holding hours and address information */
+.hours-text, .address-text{
+font-size: 25px;
+font-weight: lighter;
+padding-left: 50px;
+padding-bottom: 20px;
+}
+
+/* size of map container */
+.map-class{
+width: 10%;
+height: 86%;
+margin: 40px;
+right: 50px;
+}
+
+/* position and styling of the map image */
+.map-class img {
+    position: relative;
+    left: -340px;
+    box-shadow: 0px 0px 5px 5px #f1f0f0; /* light grey color */
+}
+
+/* FOOTER */
+
+footer
+{
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: #70b4e2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 1500px;
+    min-width: 1500px;
+    text-align: left;
+    justify-content: center;
+    font: bold 16px sans-serif;
+    padding: 30px 50px;
+    width: 100%;
+}
+
+.footer-left 
+{ 
+    margin-left: 50px;
+    font-family: 'Crimson Pro', serif;
+    font-weight: lighter;
+}
+
+
+.footer-left div, .footer-center div, .footer-right div
+{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.footer-left div a, .footer-center div a, .footer-right div a
+{
+    color: #ffffffd3;
+}
+
+.footer-header {
+    margin-top: 35px !important;
+    margin-bottom: 30px;
+    pointer-events: none; /*avoid cursor disappearing when mouse hover*/
+}
+
+.footer-header a {
+    color: #ffffff !important;
+    text-decoration: none;
+    cursor: none;
+    font-weight: bold;
+}
+
+.qa {
+    width: 100px;
+    text-align: center;
+}
+    
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right
+{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Crimson Pro', serif;
+    font-weight: lighter;
+}
+    
+.footer-distributed .footer-left
+{
+    width: 40%;
+}    
+    
+.footer-distributed .footer-links
+{
+    color:  #ffffff;
+    margin: 20px 0px 22px;
+    padding: 0;
+}
+    
+.footer-distributed .footer-links a
+{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+    margin-right: 30px;
+}
+    
+.footer-distributed .footer-center
+{
+    width: 35%;
+}
+    
+.footer-distributed .footer-center p
+{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+    
+.footer-distributed .footer-center p a
+{
+    color:  #5383d3;
+    text-decoration: none;;
+}
+    
+.footer-distributed .footer-right
+{
+    width: 20%;
+}
+    
+.footer-distributed .footer-company-about span
+{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE FOR LARGE SCREENS */
+@media only screen and (min-width: 1900px) {
+    .logo-holder {
+      left: 12%;
+    }
+    .slider-container {
+        height: 1000px;
+    }
+  }
+  
+  @media only screen and (min-width: 2300px) {
+    .logo-holder {
+      left: 18%;
+    }
+    .slider-container {
+        height: 1400px;
+    }
+  }
+
+  /* RESPONSIVE FOR SMALL SCREENS */
+@media only screen and (min-width: 400px) and (max-width: 1350px) {
+    html {
+      overflow-x: hidden;
+    }
+
+    nav {
+      left: 30%;
+    }
+
+    .discounts-text p, .reviews-text p, .covid-text p {
+        font-size: 18px;
+    }
+
+    #title-over-slider h1 {
+        font-size: 40px;
+    }
+
+    #title-over-slider h2 {
+        top: 140px;
+        font-size: 32px;
+    }
+
+    .footer-distributed .footer-left,  .footer-distributed .footer-center,  .footer-distributed .footer-right {
+        width: 28%;
+    }
+    
+    .footer-left {
+        margin-left: 0;
+    }
+    
+    .footer-links {
+        width: 300px;
+    }
+    
+    .footer-distributed .footer-links {
+        margin: 10px;
+
+    }
+}
