@@ -1,6 +1,7 @@
 # **Theme Park Website (Group Project)**
 
-Team 106 | Tutor Group 12 | 5 Team Members*
+This project involves the development of a comprehensive website for a theme park, created by Team 106 from Tutor Group 12*. The website aims to provide a seamless user experience for theme park visitors, featuring essential information, ticket purchasing, and a visually appealing design.
+
 ***
 
 ## **TABLE OF CONTENTS**
